@@ -1,3 +1,4 @@
+<!--单选-->
 <template>
   <div class="selection-component">
     <div class="selection-show" @click="toggleDrop">
@@ -38,7 +39,7 @@
       chooseSelection (index) {
         this.nowIndex = index
         this.isDrop = false
-        this.emit('on-change', index)   //向外部传递选择的index,不然没意义
+        this.$emit('on-change', index)   //向外部传递选择的index,不然没意义
       }
     }
   }

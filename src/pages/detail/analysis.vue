@@ -46,13 +46,13 @@
           总价：
         </div>
         <div class="sales-board-line-right">
-          {{ price }} 元
+           元
         </div>
       </div>
       <div class="sales-board-line">
         <div class="sales-board-line-left">&nbsp;</div>
         <div class="sales-board-line-right">
-          <div class="button" @click="showPayDialog">
+          <div class="button">
             立即购买
           </div>
         </div>
@@ -85,10 +85,14 @@
 
 <script>
 import VSelection from '../../components/base/selection'
+import VChooser from '../../components/base/chooser'
+import VMulChooser from '../../components/base/multiplyChooser'
 
   export default {
     components: {
-      VSelection
+      VSelection,
+      VChooser,
+      VMulChooser
     },
     data () {
       return {
